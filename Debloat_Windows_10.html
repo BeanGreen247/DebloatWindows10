@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<title>Debloat Windows 10</title>
+<head>
+  <!-- Some Style -->
+<style>
+body {
+  background-colour:white;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: all;
+</style>
+</head>
+<body>  
+<header>
+<h2>Debloat Windows 10</h2>
+</header>
+<p>You can download the Debloat Scripts folder <a href="https://www.mediafire.com/file/i8oib19m0qo8hu0/Debloat_Scripts.rar/file">here</a>.</p>
+<p>Link to <a href="https://www.reddit.com/r/TronScript/comments/bpmmqn/tron_v1081_20190516_fix_microphone_disabling/">TronScript</a>.</p>
+<br>
+  
+  <h4>0.Basic Stuff</h4>
+  <p>Let us get some basics out of the way. Open File Explorer and go to Computer.</p>
+  <p>Right-click and click Properties</p>
+  <img src="Pictures1/BasicStuff/bs1.png" alt="Basic Stuff pic 1">
+  <p>It will open Basic Information abou your computer.</p>
+  <p>Click on Advanced system settings</p>
+  <img src="Pictures1/BasicStuff/bs2.png" alt="Basic Stuff pic 2">
+  <p>A windows called System Properties will show up.</p>
+  <p>Under Performance click Settings...</p>
+  <img src="Pictures1/BasicStuff/bs3.png" alt="Basic Stuff pic 3">
+  <p>A windows called Performance Options will appear.</p>
+  <p>Click Adjust for best performance</p>
+  <img src="Pictures1/BasicStuff/bs4.png" alt="Basic Stuff pic 4">
+<br>  
+  <h4>1.Sripts</h4>
+  <p>After you have downloaded the Debloat Scripts RAR file you need to extract it.</p>
+  <p>The foler content should look something like this.</p>
+  <img src="Pictures1/DeabloatScripts/DeabloatScripts1.png" alt="Deabloat Scripts pic 1">
+  <p>Open the Debloat-Windows-10 folder.</p>
+  <p>Open the only text file in there and copy the command in it.</p>
+  <img src="Pictures1/DeabloatScripts/DeabloatScripts2.png" alt="Deabloat Scripts pic 2">
+  <p>Open Powershell as administrator.</p>
+  <img src="Pictures1/DeabloatScripts/DeabloatScripts3.png" alt="Deabloat Scripts pic 3">
+  <p>A window looking like this should pop up.</p>
+  <img src="Pictures1/DeabloatScripts/DeabloatScripts4.png" alt="Deabloat Scripts pic 4">
+  <p>Copy the folder location just like i do in the picture below.</p>
+  <img src="Pictures1/DeabloatScripts/DeabloatScripts5.png" alt="Deabloat Scripts pic 5">
+  <p>Go into the directory using the cd command like shown.</p>
+  <img src="Pictures1/DeabloatScripts/DeabloatScripts6.png" alt="Deabloat Scripts pic 6">
+  <p>Next copy the command from the text file and Right-click to paste in into Powershell.</p>
+  <img src="Pictures1/DeabloatScripts/DeabloatScripts7.png" alt="Deabloat Scripts pic 7">
+  <p>Hit enter and enable execution for all files.</p>
+  <img src="Pictures1/DeabloatScripts/DeabloatScripts8.png" alt="Deabloat Scripts pic 8">
+  <p>To execute the scripts you have to write a "dot" and a "foward slash" followed by the files name.</p>
+  <p>Just follow the picture and execute the rest of the scripst like that.</p>
+  <img src="Pictures1/DeabloatScripts/DeabloatScripts9.png" alt="Deabloat Scripts pic 9">
+  <p>After you have run the scripts go back to the Debloat Scripts folder.</p>
+  <p>Right-click the decrap-win10.bat file and run as admin.</p>
+  <img src="Pictures1/DeabloatScripts/DeabloatScripts10.png" alt="Deabloat Scripts pic 10">
+  <p>Whith the scripts done lets get going onto the next step.</p>
+<br>
+  <h4>2.System Configuration</h4>
+  <p>Open System Configuration (msconfig) as administrator.</p>
+  <img src="Pictures1/msconfig/msconfig1.png" alt="msconfig pic 1">
+  <p>A window looking like this should pop up.</p>
+  <img src="Pictures1/msconfig/msconfig2.png" alt="msconfig pic 2">
+  <p>Go to boot, check No GUI Boot and Click on Advanced options...</p>
+  <img src="Pictures1/msconfig/msconfig3.png" alt="msconfig pic 3">
+  <p>A window named BOOT Advanced Options should appear.</p>
+  <p>Check Number of processors and select the highest value available.</p>
+  <img src="Pictures1/msconfig/msconfig4.png" alt="msconfig pic 4">
+  <p>Next go to Services and disable the following services.</p>
+  <ul>
+    <li>Bluetooth Audio Gateway Service</li>
+    <li>Windows Insider Service</li>
+    <li>BitLocker Drive Encryption Service</li>
+    <li>Fax</li>
+    <li>Windows Font Cache Service</li>
+    <li>Smart Card</li>
+    <li>Sensor Monitoring Service</li>
+    <li>Telephony</li>
+    <li>WMI Perfomance Adapter</li>
+    <li>Windows Update</li>
+    <li>Windows Defender Antivirus Service</li>
+    <li>Security Center</li>
+    <li>Superfetch</li>
+  </ul>
+  <p>To disable them just untick them.</p>
+  <img src="Pictures1/msconfig/msconfig5.png" alt="msconfig pic 5">
+<br>
+  <h4>3.Windows Features</h4>
+  <p>Open Control Panel.</p>
+  <img src="Pictures1/WindowsFeatures/wf1.png" alt="WindowsFeatures pic 1">
+  <p>Click on Programs and Features</p>
+  <img src="Pictures1/WindowsFeatures/wf2.png" alt="WindowsFeatures pic 2">
+  <p>Click on Turn Windows features on or off</p>
+  <img src="Pictures1/WindowsFeatures/wf3.png" alt="WindowsFeatures pic 3">
+  <p>Change the features to these settings.</p>
+  <img src="Pictures1/WindowsFeatures/wf4.png" alt="WindowsFeatures pic 4" style="width:798px;height:638px;">
+<br>
+  <h4>4.Services</h4>
+  <p>Open Services as administrator.</p>
+  <img src="Pictures1/Services/Services1.png" alt="Services pic 1">
+  <p>Change the following to disabled by Right-clicking and Properties and change Startup type to Disabled.</p>
+  <img src="Pictures1/Services/Services2.png" alt="Services pic 2" style="width:798px;height:638px;">
+  <br>
+  <h4>5.TronScript</h4>
+  <p>Right-click the downloaded Tron execuatable and click Run as administrator.</p>
+  <img src="Pictures1/TronScript/tron1.png" alt="TronScript pic 1">
+  <p>It will create a folder called tron.</p>
+  <img src="Pictures1/TronScript/tron2.png" alt="TronScript pic 2">
+  <p>Open the tron folder and run tron.bat as administrator.</p>
+  <img src="Pictures1/TronScript/tron3.png" alt="TronScript pic 3">
+  <p>After launchin it will show a few lines and then a red screen will appear.</p>
+  <p>Just type "I AGREE" as shown.</p>
+  <img src="Pictures1/TronScript/tron4.png" alt="TronScript pic 4">
+  <p>Once you hit enter you will have to wait for about 7-9 hours depending on your system.</p>
+  <br>
+  <h4>6.Conclusion</h4>
+  <p>After all of this you should now have a much faster computer then before.</p>
+  <p>You do not have to deal with updates or slowdowns anymore.</p>
+  <p>Also we have disabled the windows telemetry and spying mechanism of the os.</p>
+  <p>A way you can check is by opening Task Manager and click performance.</p>
+  <p>With no apps running you should see noo network activity. Just like it should be.</p>
+  <p>Hope this helpped. Make sure to subscribe to <a href="https://www.youtube.com/channel/UCQbA5Nc4oq6uMS2idDWsxkw?view_as=subscriber">my channel</a>.</p>
+  <p>And check out <a href="https://www.youtube.com/watch?v=giCH_Afb4hA">the video</a> for more details.</p>
+  </body>
+</html>
